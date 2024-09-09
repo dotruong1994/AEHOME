@@ -1,0 +1,26 @@
+
+.kaizen_row{
+    display: flex;
+    flex-direction: row;
+    margin: var(--margin_distance);
+  }
+  
+  .kaizen_row_col{
+    flex:1;
+    background-color: var(--background_container);
+  }
+  .kaizen_row_col + .kaizen_row_col{
+    margin-left: var(--margin_distance);
+  }
+  .kaizen_icon{
+    width: 100%;
+  }
+  .kaizen_picture{
+    display: flex;
+    flex-direction: row;
+  }
+  .kaizen_topic{
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+  }

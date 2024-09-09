@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AE HOME PAGE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../uibuilder/images/node-blue.ico">
+        <!-- <meta name="description" content="Node-RED uibuilder - Blank template"> -->
+        <link type="text/css" rel="stylesheet" href="./index.css" media="all">
+        <link type="text/css" rel="stylesheet" href="./table.css" media="all">
+        <script defer src="./index.js"></script>
+        <script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+    </head>
+</html>
+<body>
+    <div class="main_container">
+
+        <div class="header_container">
+                <div class="header_text">AE</div>
+        </div>
+
+        <div class="real_time_data_container">
+            a
+        </div>
+
+        <div class="iot_system_container">
+            <div class="iot_system_row_1">
+                <div class="iot_system_row_1_left_col">
+                    a
+                </div>
+                <div class="iot_system_row_1_right_col">
+                    <div class="iot_system_row_1_right_col_row">a</div>
+                    <div class="iot_system_row_1_right_col_row">a</div>
+                </div>
+            </div>
+            <div class="iot_system_row_2">
+                <div class="iot_system_row_2_left_col">
+                    <div class="iot_system_row_2_left_col_col">
+                        a
+                    </div>
+                    <div class="iot_system_row_2_left_col_col">
+                        a
+                    </div>
+                </div>
+                <div class="iot_system_row_2_right_col">
+                    a
+                </div>
+            </div>
+        </div>
+
+        <div class="separator_container">
+            <div class="separator_line_container">
+                <div class="separator_line_left"></div>
+                <div class="separator_line_right"></div>
+            </div>
+        </div>
+
+        <div class="kaizen_container">
+            <div class="topic_title_text">AE's Improvements</div>
+            <div class="kaizen_row">
+                <div class="kaizen_row_col">a</div>
+                <div class="kaizen_row_col">a</div>
+                <div class="kaizen_row_col">a</div>
+            </div>
+            <div class="kaizen_row">
+                <div class="kaizen_row_col">a</div>
+                <div class="kaizen_row_col">a</div>
+                <div class="kaizen_row_col">a</div>
+            </div>
+        </div>
+
+        <div class="separator_container">
+            <div class="separator_line_container">
+                <div class="separator_line_left"></div>
+                <div class="separator_line_right"></div>
+            </div>
+        </div>
+
+        <div class="ae_infor_container">
+            <div class="ae_infor_left"></div>
+            <div class="ae_infor_right"></div>
+        </div>
+
+
+    </div>
+</body>

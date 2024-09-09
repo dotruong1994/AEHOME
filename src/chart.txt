@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ Đồ Tổ Chức</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/orgchart@latest/dist/css/jquery.orgchart.min.css">
+    <style>
+        #orgChart {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="orgChart"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/orgchart@latest/dist/js/jquery.orgchart.min.js"></script>
+    <script>
+        $(function() {
+            var chart = $('#orgChart').orgchart({
+                'data' : {
+                    'name': 'CEO',
+                    'children': [
+                        {
+                            'name': 'Manager 1',
+                            'children': [
+                                { 'name': 'Staff 1' },
+                                { 'name': 'Staff 2' }
+                            ]
+                        },
+                        {
+                            'name': 'Manager 2',
+                            'children': [
+                                { 'name': 'Staff 3' },
+                                { 'name': 'Staff 4' }
+                            ]
+                        }
+                    ]
+                },
+                'chartClass': 'org-chart',
+                'nodeContent': 'title'
+            });
+        });
+    </script>
+</body>
+</html>

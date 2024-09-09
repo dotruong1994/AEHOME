@@ -1,0 +1,143 @@
+/* CSS THẺ MÁY */
+
+.machine_info_card_GM{
+    background-color: white;border-radius: 10px;  
+    margin-right: 10px;
+    flex: 1;
+    height: 242px; 
+}
+.machine_info_card_RG{
+    flex: 1;
+    background-color: white;border-radius: 10px;  
+    margin-left: 10px;
+    margin-right: 10px; 
+    height: 242px;
+}
+.machine_info_card_PR{
+    flex: 1;
+    background-color: white;border-radius: 10px;  
+    margin-left: 10px;
+    margin-right: 10px; 
+    height: 242px;
+}
+.machine_info_card_CM{
+    flex: 1;
+    background-color: white;border-radius: 10px;  
+    margin-left: 10px; 
+    margin-right: 20px;
+    height: 242px;
+}
+
+.machine_name_card{
+    font-size: 15px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+    /* width: 300px; */
+}
+.oven_info_card{
+    margin-left: 10px;
+    background-color: white;border-radius: 10px;
+    flex: 1;
+    height: 242px;
+}
+
+.GM_status{         
+    padding: 5px 16px;
+    background-color: #abd876ff;
+    border: none;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.AR_status{         
+    padding: 5px 16px;
+    background-color: #abd876ff;
+    border: none;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.AP_status{         
+    padding: 5px 16px;
+    background-color: #abd876ff;
+    border: none;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.AC_status{         
+    padding: 5px 16px;
+    background-color: #abd876ff;
+    border: none;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.oven_status
+{         
+    padding: 5px 16px;
+    background-color: #abd876ff;
+    border: none;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.pr_value_big{
+    font-size: 80px;
+    font-weight: bold;
+    color: #0d8a72ff;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+.pr_value_unit{
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+    color: #a4a9b2ff;
+    font-weight: 500;
+}
+.machine_ouput_card{
+    display: inline-block;
+}
+
+.machine_ouput_card_value,
+.production_card_value{
+    font-size: 23px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+} 
+.unit{
+    margin-top: 0;
+    font-size: 11px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.row-in {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.hang1{
+    display: flex;
+    flex-direction: row;
+}
+.hang2{
+    display: flex;
+    flex-direction: row;
+}
+.hang3{
+    display: flex;
+    flex-direction: row;
+}

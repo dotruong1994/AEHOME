@@ -1,0 +1,134 @@
+:root{
+  --text_color:#010D2B;
+}
+
+.real_time_data_container{
+    display: flex;
+    margin-left: var(--margin_distance);
+    margin-right: var(--margin_distance);
+    /* margin-bottom: var(--margin_distance); */
+    background-color: white;
+    flex:1;
+
+  }
+  .aac_container{
+    display: flex;
+    flex-direction: row;
+    flex:2;
+  }
+  .aac_title{
+    margin-left: 20px;
+    transform: rotate(-90deg);
+  }
+  
+  .aac_machine{
+    display: flex;
+    flex-direction: row;
+  }
+  .machine_card_container{
+    display: flex;
+    flex-direction: row;
+  }
+  .machine_card_container + .machine_card_container{
+    margin-left: 50px;
+  }
+  .aac_machine_status{
+  display: flex;
+  flex-direction: row;
+  }
+  .machine_status{
+    padding: 1px 2px;
+    background-color: green;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 3px;
+  }
+  .machine_name{
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px;
+    justify-content: center;
+    color: var(--text_color);
+  }
+  
+  .aac_machine_card{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    color: var(--text_color);
+  }
+  .aac_text{
+    font-size: 12px;
+    color: var(--hide_text);
+    margin-right: 5px;
+    
+  }
+  .aac_value{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .aac_unit{
+    font-size: 10px;
+    margin-left: 5px;
+    color: var(--hide_text);
+  }
+  
+  .thermal_container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-top: 2px;
+  }
+  .icon_thermal{
+    width: 12px;
+    margin-right: 5px;
+  }
+  .thermal_value{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--text_color);
+  }
+  .thermal_row_1{
+    display: flex;
+    flex-direction: row;
+  }
+  .thermal_row_1 + .thermal_row_1{
+    margin-top: 5px;
+  }
+  .thermal_icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .thermal_row_1_col_row_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: var(--text_color);
+  }
+  
+  .thermal_row_1_col{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: center;
+  }
+  .thermal_row_1_col + .thermal_row_1_col{
+    margin-left: 40px;
+  }
+  .thermal_row_1_col_row_2{
+    display: flex;
+    flex-direction: row;
+  }
+  

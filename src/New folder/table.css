@@ -1,0 +1,32 @@
+/* TABLE */
+
+.styled-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    font-size: 15px;
+    margin-left: 30px;
+    width: 90%;
+}
+.styled-table thead tr {
+    /* background-color: #009879; */
+    color: #000000;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}

@@ -1,0 +1,121 @@
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+ @media (max-width: 576px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .row2 {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .row3 {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .update-time{
+        display: none;
+    }
+    .header-text{
+        flex:1;
+        margin-left: 14px;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+    }
+    .value-info{
+        font-size: 25px;
+        font-weight: 550;
+        margin: 0;
+    }
+    .column2 {
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+     /* Should be removed. Only for demonstration */
+    }
+    .info_container_left {
+        display: flex;
+        /* width: 420px; */
+        margin-right: 0px;
+        background-color: white;border-radius: 10px;    
+    }
+    .info_container_middle{
+        display: flex;
+        /* width: 420px; */
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        background-color: white;border-radius: 10px;
+    }
+      
+    .info_container_right{
+        display: flex;  
+        /* width: 420px; */
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: white;border-radius: 10px;
+    }
+
+    .machine_info_card_GM{
+        background-color: white;border-radius: 10px;  
+        margin-right: 5px;
+        flex: 1;
+        height: 242px; 
+    }
+    .machine_info_card_RG{
+        flex: 1;
+        background-color: white;border-radius: 10px;  
+        margin-left: 5px;
+        margin-right: 10px; 
+        height: 242px;
+    }
+    .machine_info_card_PR{
+        flex: 1;
+        background-color: white;border-radius: 10px;  
+        margin-left: 0px;
+        margin-right: 10px; 
+        height: 242px;
+    }
+    .machine_info_card_CM{
+        flex: 1;
+        background-color: white;border-radius: 10px;  
+        margin-left: 5px; 
+        margin-right: 10px;
+        height: 242px;
+    }
+    .hang2{
+    margin-top: 10px;
+    }
+    .hang3{
+    margin-top: 10px;
+    }
+    .oven_info_card{
+    margin-left: 0px;
+    background-color: white;border-radius: 10px;
+    flex: 1;
+    height: 242px;
+    }
+    .row3{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .chart-container-1 {
+        margin-left: 0px;
+        margin-right: 0px;
+       }
+    .chart-container-2 {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    .chart-container-3 {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,174 @@
+
+.orgChart_class {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .ae_infor_container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+  .ae_infor_left{
+    display: flex;
+    flex:2.2;
+  }
+
+  .org_chart{
+    display: flex;
+    width: 100%;
+    background-color: white;
+  }
+  .chartorg{
+    height: 680px;
+    width: 100%;
+  }
+  .ae_infor_right{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 20px;
+    /* align-items: center; */
+  }
+  .ae_infor_picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .ae_picture{
+    border-radius: 50px;
+  }
+  .ae_infor_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .ae_infor_row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+.infor_row_type{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+  font-size: 13px;
+  margin-left: 10px;
+  color: var(--hide_text);
+
+}
+.infor_row_value{
+  display: flex;
+  flex: 1;
+  font-size: 13px;
+  justify-content: start;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.ae_infor_row_skill{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.chart_skill_container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.ae_infor_row_skill_name{
+  display: flex;
+  font-size: 13px;
+  justify-content: start;
+}
+.canvas_container{
+  display: flex;
+  width: 25px;  
+  align-items: center;
+}
+.chart_skills_matrix{
+  display: flex;
+  margin-left: 10px;
+}
+.edit_profile{
+  display: none;
+  position:absolute;
+  z-index: 2;
+  position: fixed; /* Đặt vị trí cố định */
+  top: 0; /* Bắt đầu từ đỉnh màn hình */
+  left: 0; /* Bắt đầu từ bên trái màn hình */
+  right: 0; /* Kéo dài đến bên phải màn hình */ 
+  bottom: 0; /* Kéo dài đến dưới cùng màn hình */
+  background-color: rgba(0, 0, 0, 0.1); /* Màu nền nửa trong suốt */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+}
+.edit_profile_container{
+  display: flex;
+  flex-direction: column;
+   background-color: white;
+  /* width: 100% */
+  margin: 30px;
+}
+.edit_profile_row_2{
+  display: flex;
+  flex-direction: row;
+}
+.edit_profile_row_2_row{
+  display: flex;
+  flex-direction: row;
+}
+
+.edit_profile_skils{
+  display: flex;
+  margin-left: 40px;
+  /* margin-top: 200px; */
+}
+
+.edit_profile_skils th.rotate {
+  max-width: 25px;
+  white-space: nowrap; /* Ngăn chặn văn bản xuống dòng */
+  transform: rotate(-90deg); /* Xoay tiêu đề */
+  /* transform-origin: left bottom; */
+  position: relative;
+ ;
+}
+.edit_profile_skils th {
+  align-items: start;
+
+}
+.edit_profile_skils td{
+  align-items: center;
+  width: 20px;
+}
+
+.skill_table_input{
+  width: 100%;
+  font-size:15px;
+}
+
+.upfile_container{
+  display: none;
+  position:absolute;
+  z-index: 2;
+  position: fixed; /* Đặt vị trí cố định */
+  top: 0; /* Bắt đầu từ đỉnh màn hình */
+  left: 0; /* Bắt đầu từ bên trái màn hình */
+  right: 0; /* Kéo dài đến bên phải màn hình */ 
+  bottom: 0; /* Kéo dài đến dưới cùng màn hình */
+  /* background-color:white; */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  margin: 300px;
+  color: white;
+  background-color: black;
+}

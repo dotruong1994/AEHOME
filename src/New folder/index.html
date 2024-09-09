@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../uibuilder/images/node-blue.ico">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="machine-card.css">
+<link rel="stylesheet" href="table.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="chart.css">
+<script src="index.js"></script>
+<script src="./dist/chart.umd.js"></script>
+<script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+<script src="./chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js"></script>
+<script defer src="./index.js">/* OPTIONAL: Put your custom code in that */</script>
+</head>
+<body>
+<div class="header">
+    <div class="headerx">
+          <button class="logo-button"><img src="img/menu.svg" alt="logo"></button>
+          <div class="header-text">STICHING MACHINE REALTIME OVERVIEW</div>
+          <div class="update-time">UPDATE: <span id="real-time"></span></div>
+          <div class="icons"><img src="img/nike.svg" alt=""></div>
+          <div class="icons-end"><img src="img/vy.svg" alt=""></div>
+    </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="info_container_left">
+      <div class="overview_info">
+          <p class="overview_info_value" id="AC_output">1260</p>
+          <p class="overview_info_value_name">OUTPUT</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="AC_oee">58</p>
+          <p class="overview_info_value_name">OEE</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="AC_or">88</p>
+          <p class="overview_info_value_name">OR</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="AC_pr">77</p>
+          <p class="overview_info_value_name">PR</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="AC_qr">0</p>
+          <p class="overview_info_value_name">QR</p>
+      </div>
+  </div>
+  </div>
+  <div class="column">
+    <div class="info_container_middle">
+      <div class="overview_info">
+          <p class="overview_info_value" id="loading-qty">-</p>
+          <p class="overview_info_value_name">LOADING QTY</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="loading-ct">-</p>
+          <p class="overview_info_value_name">LOADING CT</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="feeding-lost">-</p>
+          <p class="overview_info_value_name">FEEDING LOST</p>
+      </div>
+      <div class="overview_info">
+          <p class="overview_info_value" id="watting-lost">-</p>
+          <p class="overview_info_value_name">WAITING LOST</p>
+      </div>
+    </div>
+  </div>
+    <div class="column">
+      <div class="info_container_right">
+        <div class="overview_info">
+            <p class="overview_info_value">PN-193</p>
+            <p class="overview_info_value_name">MODEL</p>
+        </div>
+        <div class="overview_info">
+            <p class="overview_info_value">4296-001</p>
+            <p class="overview_info_value_name">COLOR WAY</p>
+        </div>
+        <div class="overview_info">
+            <p class="overview_info_value" id="AC_total_output">0</p>
+            <p class="overview_info_value_name">OUTPUT FROM Oct 3rd</p>
+        </div>
+    </div>
+   </div>
+</div>
+
+<div class="row2">
+  <div class="column">
+    <div class="hang1">
+        <div class="machine_info_card_GM">
+      <p class="machine_name_card">GAUGE MARKING</p>
+      <button class="GM_status" id="GM_status_id"></button>
+      <div class="PR_value">
+          <p class="pr_value_big" id="GM_pr_value_big">--</p>
+          <p class="pr_value_unit">PR %</p>
+      </div>
+      <div class="container">
+          <div class="row-in">
+              <p class="machine_ouput_card_value" id="GM_machine_ouput_card_value">--</p>
+              <p class="unit">OUTPUT</p>
+          </div>
+          <div class="row-in">
+              <p class="production_card_value" id="GM_production_card_value">--</p>
+              <p class="unit">PRODUCTION</p>
+          </div>
+      </div>
+    </div>
+    <div class="machine_info_card_RG">
+      <p class="machine_name_card">BUFFING</p>
+      <button class="AR_status" id="AR_status_id"></button>
+      <div class="PR_value">
+          <p class="pr_value_big" id="AR_pr_value_big">--</p>
+          <p class="pr_value_unit">PR %</p>
+      </div>
+      <div class="container">
+          <div class="row-in">
+              <p class="machine_ouput_card_value" id="AR_machine_ouput_card_value">--</p>
+              <p class="unit">OUTPUT</p>
+          </div>
+          <div class="row-in">
+              <p class="production_card_value" id="AR_production_card_value">--</p>
+              <p class="unit">PRODUCTION</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="hang2">
+      <div class="machine_info_card_PR">
+        <p class="machine_name_card">PRIMING</p>
+        <button class="AP_status" id="AP_status_id"></button>
+        <div class="PR_value">
+            <p class="pr_value_big" id="AP_pr_value_big">--</p>
+            <p class="pr_value_unit">PR %</p>
+        </div>
+
+        <div class="container">
+            <div class="row-in">
+                <p class="machine_ouput_card_value" id="AP_machine_ouput_card_value">--</p>
+                <p class="unit">OUTPUT</p>
+            </div>
+            <div class="row-in">
+                <p class="production_card_value" id="AP_production_card_value">--</p>
+                <p class="unit">PRODUCTION</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="machine_info_card_PR">
+      <p class="machine_name_card">CEMENTING</p>
+            <button class="AC_status" id="AC_status_id"></button>
+            <div class="PR_value">
+                <p class="pr_value_big" id="AC_pr_value_big">--</p>
+                <p class="pr_value_unit">PR %</p>
+            </div>
+
+            <div class="container">
+                <div class="row-in">
+                    <p class="machine_ouput_card_value" id="AC_machine_ouput_card_value">--</p>
+                    <p class="unit">OUTPUT</p>
+                </div>
+                <div class="row-in">
+                    <p class="production_card_value" id="AC_production_card_value">--</p>
+                    <p class="unit">PRODUCTION</p>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="column">
+    <div class="hang3">
+        <div class="oven_info_card">
+        <p class="machine_name_card">OVEN</p>
+        <button class="oven_status" id="oven_status_id"></button>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>UPV/SV</th>
+                        <th>DPV/SV</th>
+                        <th>SPEED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><span id="OV1-UPV"></span>/<span id="OV1-USV"></span></td>
+                        <td><span id="OV1-DPV"></span>/<span id="OV1-DSV"></span></td>
+                        <td><span id="OV1-speed"></span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><span id="OV2-UPV"></span>/<span id="OV2-USV"></span></td>
+                        <td><span id="OV2-DPV"></span>/<span id="OV2-DSV"></span></td>
+                        <td><span id="OV2-speed"></span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span id="OV3-UPV"></span>/<span id="OV3-USV"></span></td>
+                        <td><span id="OV3-DPV"></span>/<span id="OV3-DSV"></span></td>
+                        <td><span id="OV3-speed"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="row3" style="position: relative;">
+    <div class="column2">
+        <div class="chart-container-1" >
+            <canvas id="bar-line"  ></canvas>
+        </div>
+        <div class="chart-container-2" >
+            <canvas id="horizon-bar" ></canvas>
+        </div>
+    </div>
+    <!-- <div class="column2">
+        
+    </div> -->
+
+    <div class="column3">
+        <div class="chart-container-3" >
+            <canvas id="multi-line"></canvas>
+        </div>
+    </div>
+        
+</div>
+    
+</body>
+</html>

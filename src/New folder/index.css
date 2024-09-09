@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: Century Gothic; 
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(241,242,246);
+  }
+  
+  /* Style the header */
+  .header {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .row2 {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 20px;
+  }
+  .row3 {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+ /* Should be removed. Only for demonstration */
+  }
+
+  .column2 {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+ /* Should be removed. Only for demonstration */
+  }
+  .column3 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+ /* Should be removed. Only for demonstration */
+  }
+
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    overflow-x:auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .headerx{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    align-items: center;
+    height: 45px;
+    background-color: #009879;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.logo-button {
+  margin-left: 5px;
+  width: 40px;
+  margin-top: 5px;
+  background-color: #009879;
+  border: #009879;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.logo-button:hover {
+  background-color: #00755e; /* Green */
+  color: white;
+  border-radius: 5px;
+}
+
+.logo-button img {
+  width: 25px;
+  height: 25px;
+}
+.header-text{
+    flex:1;
+    margin-left: 14px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.update-time{
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+  
+}
+.icons img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+  }
+.icons-end img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+/* .overview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+} */
+
+.info_container_left {
+  display: flex;
+  /* width: 420px; */
+  margin-right: 10px;
+  background-color: white;border-radius: 10px;
+
+}
+.info_container_middle{
+  display: flex;
+  /* width: 420px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;border-radius: 10px;
+}
+
+.info_container_right{
+  display: flex;  
+  /* width: 420px; */
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: white;border-radius: 10px;
+}
+.overview_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.overview_info_value_name{
+  font-size: 10px;
+}
+.overview_info_value{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+
+
