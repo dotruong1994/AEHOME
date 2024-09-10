@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    margin-left: var(--body_margin_distance);
+    margin-right: var(--body_margin_distance);
   }
   .iot_system_row_1{
     display: flex;
@@ -12,44 +14,94 @@
     flex:1;
   }
   
-  
-  .iot_system_row_1_left_col{
+
+  .iot_big_card{
     display: flex;
     flex:2;
-    background-color: var(--background_container);
-    margin-left: var(--margin_distance);
+    /* background-color: var(--background_container); */
     margin-right: var(--margin_distance);
+    /* background-color: black; */
   }
+  .iot_topic_big{
+
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .iot_text_big{
+    font-size: 13px;
+    color:var(--hide_text)
+  }
+
   .iot_picture{
     display: flex;
     flex: 1;
+    margin-right: 10px;
   }
+
+  .iot_picture_big{
+    display: flex;
+    flex: 1.54;
+    margin-right: 10px;
+  }
+  .iot_describe_big{
+    display: flex;
+    flex-direction: column;
+    flex:0.46;
+  }
+
   .iot_icon{
     width: 100%;
   }
+  .iot_describe{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+  }
   .iot_topic{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
   }
   .iot_text{
+    display: flex;
+    justify-content: space-around;
     font-size: 12px;
+    color: var(--hide_text);
   }
   .iot_system_row_1_right_col{
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: var(--margin_distance);
   }
-  .iot_system_row_1_right_col_row{
+  .iot_card_row_1{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* background-color: var(--background_container); */
+  }
+  .iot_card_row_2{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* background-color: var(--background_container); */
+
+  }
+  .iot_card_row_3{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
     background-color: var(--background_container);
   }
-  .iot_system_row_1_right_col_row + .iot_system_row_1_right_col_row{
+  .iot_card_row_2 + .iot_card_row_2{
+    margin-left: var(--margin_distance);
+  }
+  .iot_card_row_1 + .iot_card_row_1{
     margin-top: var(--margin_distance);
   }
   .iot_system_row_2{
     display: flex;
-    flex-direction: row;
-    margin:var(--margin_distance);
+    flex-direction: row;  
+    margin-top: var(--margin_distance);
   }
   .iot_system_row_2_left_col{
     display: flex;
@@ -61,6 +113,7 @@
     flex: 1;
     flex-direction: column;
     background-color: var(--background_container);
+    margin-right: var(--margin_distance);
   }
   .iot_system_row_2_left_col_col + .iot_system_row_2_left_col_col{
     margin-left: var(--margin_distance);
@@ -71,4 +124,7 @@
     flex: 1;
     background-color: var(--background_container);
     margin-left: var(--margin_distance);
+  }
+  .link{
+    background-color: black;
   }

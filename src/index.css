@@ -1,11 +1,14 @@
 :root {
-  --backgound_color: #EAEAF3;
-  --background_container: white;
+  /* --backgound_color: #EAEAF3; */
+  --backgound_color: white;
+  --background_container: transform;
   --main_color: #B264FF;
   --boder_radias:   10px;
-  --margin_distance: 20px;
+  --margin_distance: 50px;
+  --body_margin_distance: 30px;
   --hide_text: #a4a9b2ff;
   --background_chart: #EAEAF3;
+
 }
 
 * {
@@ -31,11 +34,11 @@ body {
   align-items: center;
   display: flex;
   font-weight: bold;
-  margin-left: var(--margin_distance);
+  margin-left: var(--body_margin_distance);
   margin-top: 10px;
-  margin-bottom: var(--margin_distance);
+  margin-bottom: var(--body_margin_distance);
   background-color: white;
-  margin-right: var(--margin_distance);
+  margin-right: var(--body_margin_distance);
 }
 .logo_color{
   fill:var(--main_color)
@@ -50,8 +53,8 @@ body {
 
 .topic_title_text{
   display: flex;
-  font-size: 15px;
-  margin-left: calc(var(--margin_distance));
+  font-size: 20px;
+  margin-left: calc(var(--body_margin_distance));
   margin-top: 5px;
   font-weight: bold ;
   color: var(--main_color);
@@ -59,8 +62,9 @@ body {
 .separator_line_container{
   display: flex;
   flex-direction: row;
-  margin-left: var(--margin_distance);
-  margin-right: var(--margin_distance);
+  margin-left: var(--body_margin_distance);
+  margin-right: var(--body_margin_distance);
+  margin-top: 50px;
 
 }
 .separator_line_left{
