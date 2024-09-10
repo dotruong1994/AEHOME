@@ -4,10 +4,11 @@
 
 .real_time_data_container{
     display: flex;
+    flex-direction: row;
     margin-left: var(--body_margin_distance);
     margin-right: var(--body_margin_distance);
-    justify-content: end;
-    flex:1;
+    justify-content: start;
+    width: 100%;
   }
   .aac_container{
     display: flex;
@@ -26,6 +27,7 @@
   .machine_card_container{
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
   .machine_card_container + .machine_card_container{
     margin-left: 50px;
@@ -72,13 +74,17 @@
     margin-left: 5px;
     color: var(--hide_text);
   }
-  
+
   .thermal_container{
     display: flex;
-    align-items: end;
-    flex: 1;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    transition: transform 0.5s ease;
+    height: 100%;
+    position: absolute;
+
   }
 
   .icon_thermal{
@@ -121,7 +127,10 @@
     flex-direction: row;
     flex:1;
     justify-content: center;
+    /* opacity: 0;
+    transition: opacity 0.5s ease; */
   }
+
   .thermal_row_1_col + .thermal_row_1_col{
     margin-left: 40px;
   }
@@ -129,4 +138,3 @@
     display: flex;
     flex-direction: row;
   }
-  

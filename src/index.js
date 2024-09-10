@@ -527,3 +527,34 @@ var chart = JSC.chart('chartDiv', {
     numbers = shuffleArray(numbers);
     createBoard();
 });
+
+
+
+
+
+// auto scroll
+
+const scrollContent = document.querySelector('.thermal_container');
+        const items = document.querySelectorAll('.thermal_row_1_col');
+        const itemHeight = items[0].offsetHeight; // Chiều cao của từng thẻ
+        console.log(items)
+        const totalItems = items.length;
+        let currentIndex = 0;
+        const scrollInterval = 2000; // Thay đổi khoảng thời gian nếu cần
+
+        function autoScroll() {
+            // Ẩn tất cả các thẻ
+            items.forEach(item => item.classList.remove('visible'));
+
+            // Tính toán vị trí của thẻ hiện tại
+            const offset = currentIndex * itemHeight;
+            scrollContent.style.transform = `translateY(-${offset}px)`;
+            
+            // Hiển thị thẻ hiện tại
+            items[currentIndex].classList.add('visible');
+
+            // Cập nhật chỉ mục và quay lại đầu nếu cần
+            currentIndex = (currentIndex + 1) % totalItems;
+        }
+
+        setInterval(autoScroll, scrollInterval);

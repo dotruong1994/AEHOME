@@ -27,6 +27,7 @@
 <body>
     <div class="main_container">
         <div class="header_container">
+            <div class="header_left">
                 <div class="header_text">
                         WELCOME TO  
                     </div>
@@ -97,8 +98,38 @@
                     <div class="header_text">
                         DEPARTMENT
                     </div>
-                <!-- </div> -->
-        <div class="real_time_data_container">
+                  </div>
+                  <div class="header_right">
+                    <div class="header_right_col">
+                        <div class="header_right_text">
+                                VY WIKI
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="header_right_col">
+                        <div class="header_right_text"  onclick="document.getElementById('iot_system_id').scrollIntoView({ behavior: 'smooth' });">
+                                IOT System 
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="header_right_col">
+                        <div class="header_right_text" onclick="document.getElementById('kaizen_id').scrollIntoView({ behavior: 'smooth' });">
+                            AE Kaizen</div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="header_right_col">
+                        <div class="header_right_text" onclick="document.getElementById('information_id').scrollIntoView({ behavior: 'smooth' });">
+                            AE Information</div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="header_right_col">
+                        <div class="header_right_text" onclick="document.getElementById('ae_machine_id').scrollIntoView({ behavior: 'smooth' });">
+                            AE Machine</div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="real_time_data_container">
                     <div class="machine_card_container">
                         <div class="aac_machine_status">
                             <div class="machine_status"></div>
@@ -155,7 +186,10 @@
                         </div>
                     </div>
 
-                    <div class="machine_card_container">
+                <div class="machine_card_container">
+                    <div class="thermal_container">
+
+                        <div class="thermal_row_1_col visible" >
                             <div class="thermal_row_1_col_row_1">A1</div>
                             <div class="thermal_row_1_col_row_2">
                                 <div class="thermal_icon">
@@ -171,7 +205,7 @@
                             </div>
                         </div>
 
-                        <!-- <div class="thermal_row_1_col">
+                        <div class="thermal_row_1_col" style="display: none;">
                             <div class="thermal_row_1_col_row_1">A2</div>
                             <div class="thermal_row_1_col_row_2">
                                 <div class="thermal_icon">
@@ -187,7 +221,7 @@
                             </div>
                         </div>
 
-                        <div class="thermal_row_1_col">
+                        <div class="thermal_row_1_col" style="display: none;">
                             <div class="thermal_row_1_col_row_1">A3</div>
                             <div class="thermal_row_1_col_row_2">
                                 <div class="thermal_icon">
@@ -202,12 +236,10 @@
                                 <div class="thermal_value">20%</div>
                             </div>
                         </div>
-                    </div>
 
-                        <div class="thermal_row_1">
-                            <div class="thermal_row_1_col">
+                            <div class="thermal_row_1_col" style="display: none;">
                                 <div class="thermal_row_1_col_row_1">A6</div>
-                                <div class="thermal_row_1_col_row_2">
+                                 <div class="thermal_row_1_col_row_2">
                                     <div class="thermal_icon">
                                         <img src="img/sunny-svgrepo-com.svg" class="icon_thermal">
                                     </div>
@@ -221,7 +253,7 @@
                                 </div>
                             </div>
     
-                            <div class="thermal_row_1_col">
+                            <div class="thermal_row_1_col" style="display: none;">
                                 <div class="thermal_row_1_col_row_1">A7</div>
                                 <div class="thermal_row_1_col_row_2">
                                     <div class="thermal_icon">
@@ -237,7 +269,7 @@
                                 </div>
                             </div>
     
-                            <div class="thermal_row_1_col">
+                            <div class="thermal_row_1_col" style="display: none;">
                                 <div class="thermal_row_1_col_row_1">A8</div>
                                 <div class="thermal_row_1_col_row_2">
                                     <div class="thermal_icon">
@@ -251,17 +283,20 @@
                                     </div>
                                     <div class="thermal_value">20%</div>
                                 </div>
-                            </div> -->  
+                            </div>
+
+                        </div>
                     </div>
-                    </div>
-        <div class="separator_container">
+                </div>
+
+        <div class="separator_container" id="iot_system_id">  
+            <div class="topic_title_text">IOT System</div>
             <div class="separator_line_container">
                 <div class="separator_line_left"></div>
                 <div class="separator_line_right"></div>
             </div>
         </div>
 
-<div class="topic_title_text">IOT SYSTEM</div>
         <div class="iot_system_container">
             <div class="iot_system_row_1">
                 <div class="iot_big_card">
@@ -277,28 +312,56 @@
                     </div>
                 </div>
                 <div class="iot_system_row_1_right_col">
+
                     <div class=" iot_card_row_1">
                         <div class="iot_picture">
                             <img src="img/Warehouse.gif" class="iot_icon">
                         </div>
                         <div class="iot_describe">
+                            <div class="iot_describe_row_1">
                             <div class="iot_topic">Warehouse</div>
                             <div class="iot_text">
                                 QUE'S HAU là 1 hệ thống đỉnh vãi lone, vô đó sệch được tùm lum linh kiện
                             </div>
                         </div>
+                        <div class="iot_describe_row_2">
+                            <div class="view_more_container">   
+                                <a href="http://172.21.149.109:8005/warehouse" target="_blank" rel="noopener noreferrer">  
+                                    <button class="view_more_button">
+                                        <div class="view_more_button_text">Visit page</div>
+                                         <img src="img/paper-plane-svgrepo-com.svg" class="icon_button"> 
+                                    </button> 
+                                </a>                   
+                            </div>
+                        </div>  
                     </div>
+                    </div>
+
+
                     <div class=" iot_card_row_1">
                         <div class="iot_picture">
                             <img src="img/AAC.gif" class="iot_icon">
                         </div>
                         <div class="iot_describe">
-                            <div class="iot_topic">AAC DRS</div>
-                            <div class="iot_text">
-                                AAC DRS là 1 hệ thống theo dõi sản lượng của máy AAC
-                            </div>
+                            <div class="iot_describe_row_1">
+                                <div class="iot_topic">AAC DRS</div>
+                                <div class="iot_text">
+                                    AAC DRS là 1 hệ thống theo dõi sản lượng của máy AAC
+                                </div>
+                            </div>     
+                            <div class="iot_describe_row_2">
+                                <div class="view_more_container">   
+                                    <a href="http://172.21.149.109:8005/aac" target="_blank" rel="noopener noreferrer">  
+                                        <button class="view_more_button" >
+                                            <div class="view_more_button_text">Visit page</div>
+                                             <img src="img/paper-plane-svgrepo-com.svg" class="icon_button"> 
+                                        </button> 
+                                    </a>                   
+                                </div>
+                            </div>                           
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="iot_system_row_2">
@@ -308,10 +371,22 @@
                             <img src="img/MTTR-MTBF.gif" class="iot_icon">
                         </div>
                         <div class="iot_describe">
-                            <div class="iot_topic">MTTR-MTBF</div>
-                            <div class="iot_text">
-                                MTTR-MTBF là 1 hệ thống quánh giá KPI máy của bộ phận
-                            </div>
+                            <div class="iot_describe_row_1">
+                                <div class="iot_topic">MTTR-MTBF</div>
+                                <div class="iot_text">
+                                    MTTR-MTBF là 1 hệ thống quánh giá KPI máy của bộ phận
+                                </div>
+                            </div>  
+                            <div class="iot_describe_row_2">
+                                <div class="view_more_container">   
+                                    <a href="http://172.21.149.109:8005/mttr" target="_blank" rel="noopener noreferrer">  
+                                        <button class="view_more_button" >
+                                            <div class="view_more_button_text">Visit page</div>
+                                             <img src="img/paper-plane-svgrepo-com.svg" class="icon_button"> 
+                                        </button> 
+                                    </a>                   
+                                </div>
+                            </div>  
                         </div>
                     </div>
 
@@ -320,10 +395,22 @@
                             <img src="img/thermal.JPG" class="iot_icon">
                         </div>
                         <div class="iot_describe">
-                            <div class="iot_topic">THERMAL</div>
-                            <div class="iot_text">
-                                Thermal là 1 hệ thống theo dõi nhiệt độ độ ẩm từ xa cho các kho hàng
+                            <div class="iot_describe_row_1">
+                                <div class="iot_topic">THERMAL</div>
+                                <div class="iot_text">
+                                    Thermal là 1 hệ thống theo dõi nhiệt độ độ ẩm từ xa cho các kho hàng
+                                </div>
                             </div>
+                             <div class="iot_describe_row_2">
+                                <div class="view_more_container">   
+                                    <a href="http://172.21.143.19:1880/ui" target="_blank" rel="noopener noreferrer">  
+                                        <button class="view_more_button" >
+                                            <div class="view_more_button_text">Visit page</div>
+                                             <img src="img/paper-plane-svgrepo-com.svg" class="icon_button"> 
+                                        </button> 
+                                    </a>                   
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -333,26 +420,38 @@
                             <img src="img/A18.JPG" class="iot_icon">
                         </div>
                         <div class="iot_describe">
-                            <div class="iot_topic">CART TRACKING</div>
-                            <div class="iot_text">
-                                Thermal là 1 hệ thống theo dõi nhiệt độ độ ẩm từ xa cho các kho hàng
+                            <div class="iot_describe_row_1">
+                                <div class="iot_topic">CART TRACKING</div>
+                                <div class="iot_text">
+                                    Thermal là 1 hệ thống theo dõi nhiệt độ độ ẩm từ xa cho các kho hàng
+                                </div>
                             </div>
+                            <div class="iot_describe_row_2">
+                                <div class="view_more_container">   
+                                    <a href="http://172.21.149.109:8002/sensor" target="_blank" rel="noopener noreferrer">  
+                                        <button class="view_more_button" >
+                                            <div class="view_more_button_text">Visit page</div>
+                                             <img src="img/paper-plane-svgrepo-com.svg" class="icon_button"> 
+                                        </button> 
+                                    </a>                   
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="separator_container">
+        <div class="separator_container" id="kaizen_id">
+        <div class="topic_title_text">AE Kaizen</div>
             <div class="separator_line_container">
                 <div class="separator_line_left"></div>
                 <div class="separator_line_right"></div>
             </div>
         </div>
 
-        <div class="topic_title_text">AE's Improvements</div>
         <div class="kaizen_container">
-            <div class="kaizen_row">
+            <!-- <div class="kaizen_row">
                 <div class="kaizen_row_col">
                     <div class="kaizen_picture">
                         <div class="kaizen_pic_col">
@@ -391,17 +490,16 @@
                 </div>
                 <div class="kaizen_row_col">a</div>
                 <div class="kaizen_row_col">a</div>
-            </div>
+            </div> -->
         </div>
 
-        <div class="separator_container">
+        <div class="separator_container" id="information_id">
+        <div class="topic_title_text" >AE's Information</div>
             <div class="separator_line_container">
                 <div class="separator_line_left"></div>
                 <div class="separator_line_right"></div>
             </div>
         </div>
-
-        <div class="topic_title_text">AE's Information</div>
 
         <div class="ae_infor_container">
             <div class="edit_profile" id="edit_profile_id">
@@ -821,14 +919,14 @@
             </div>  
         </div>  
 
-        <div class="separator_container">
+        <div class="separator_container" id="ae_machine_id">
+            <div class="topic_title_text">AE Machine</div>
             <div class="separator_line_container">
                 <div class="separator_line_left"></div>
                 <div class="separator_line_right"></div>
             </div>
         </div>
 
-        <div class="topic_title_text">AE Machine</div>
         <div class="ae_machine_container"></div>
     </div>
 

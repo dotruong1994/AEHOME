@@ -4,7 +4,7 @@
 .iot_system_container{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: var(--body_margin_distance);
     margin-right: var(--body_margin_distance);
   }
@@ -57,14 +57,49 @@
     flex-direction: column;
     flex:1;
   }
+  .iot_describe_row_1{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+  }
   .iot_topic{
+    display: flex;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
   }
+  .iot_describe_row_2{
+    display: flex;
+    /* justify-content: center; */
+    align-items: end;
+    height: 100%;
+    width: 100%;
+  }
+  .view_more_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .view_more_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;  
+  }
+  .view_more_button_text{
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .icon_button{
+    width: 15px;
+  }
   .iot_text{
     display: flex;
-    justify-content: space-around;
     font-size: 12px;
     color: var(--hide_text);
   }
@@ -92,22 +127,27 @@
     flex: 1;
     background-color: var(--background_container);
   }
+
   .iot_card_row_2 + .iot_card_row_2{
     margin-left: var(--margin_distance);
   }
+
   .iot_card_row_1 + .iot_card_row_1{
     margin-top: var(--margin_distance);
   }
+
   .iot_system_row_2{
     display: flex;
     flex-direction: row;  
     margin-top: var(--margin_distance);
   }
+
   .iot_system_row_2_left_col{
     display: flex;
     flex-direction: row;
     flex: 2;
   }
+
   .iot_system_row_2_left_col_col{
     display: flex;
     flex: 1;
@@ -115,9 +155,11 @@
     background-color: var(--background_container);
     margin-right: var(--margin_distance);
   }
+
   .iot_system_row_2_left_col_col + .iot_system_row_2_left_col_col{
     margin-left: var(--margin_distance);
   }
+
   .iot_system_row_2_right_col{
     display: flex;
     flex-direction: column;
@@ -125,6 +167,7 @@
     background-color: var(--background_container);
     margin-left: var(--margin_distance);
   }
+
   .link{
     background-color: black;
   }
